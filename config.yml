@@ -1,0 +1,6 @@
+# Hyper-paramètres
+
+correlation_threshold: 0.8
+variance_threshold: 0.1
+output_col: "ratio_total_infect"
+test_size: 0.2
