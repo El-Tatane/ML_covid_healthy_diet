@@ -37,7 +37,7 @@ class Score:
 
     def get_score_df(self):
         d = {"mse": [mean(self.mse_train_list), mean(self.mse_test_list)],
-             # "r_square": [mean(self.r2_score_train_list), mean(self.r2_score_test_list)],
+             "r_square": [mean(self.r2_score_train_list), mean(self.r2_score_test_list)],
              "mae": [mean(self.mae_train_list), mean(self.mae_test_list)],
              }
         df = pd.DataFrame(data=d, index=["train", "test"])
