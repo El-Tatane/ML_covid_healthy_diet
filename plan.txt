@@ -1,0 +1,44 @@
+Intro
+
+1. Présentation du projet et objectifs
+
+
+2. Présentation dataset
+- sources
+- fichier
+- problème : trop de dimension / peu de ligne
+             biais dans les données : notamment sur les politiques et restriction sanitaire
+             Fiabilité des données (pas accès au code, potentielle problème dans certaines colonnes)
+
+3. Préparation des données
+concat,
+vire colonnes NaN
+Nettoyage de certaines colonnes contenant du text
+Ajout de la nouvelle donnée target
+
+Stratégie pour réduire le nom de variable:
+- test de student
+- retirer les variables corrélé entre elle
+- suppression des variables avec peu de variance
+
+Normalisation des données
+
+
+4. Création de Modèle
+
+presentation des métriques (MSE, MAE, R2_score)
+Cross validation
+Modele de baseline : prédire la moyenne
+Entrainement de modèle
+- RF (hyperoptimisé)
+- elastic net
+- SVM regression
+- KNN
+Interpretabilité avec SHAP
+def
+Résultat pour chaque modele
+
+Resultat Globale
+
+Conclusions
+ouverture : combler les NaN avec KNN, testé de nouveau modele, essayer par de la classification
